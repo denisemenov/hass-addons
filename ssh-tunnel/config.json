@@ -12,11 +12,17 @@
     "ssh_host": "10.0.0.1",
     "ssh_user": "root",
     "ssh_port": 22,
+    "remote_port": 8123,
+    "local_host": "localhost",
+    "local_port": 8123
   },
   "schema": {
     "ssh_host": "str",
     "ssh_user": "str",
-    "ssh_port": "int",       
+    "ssh_port": "int",
+    "remote_port": "int",
+    "local_host": "str",
+    "local_port": "int",
     "advanced": "str?",
     "before": "str?"
   }

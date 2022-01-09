@@ -8,7 +8,7 @@ cat ~/.ssh/id_ed25519.pub
 
 BASE="ssh -o StrictHostKeyChecking=no -o ExitOnForwardFailure=yes -o ServerAliveInterval=60 -N"  
 
-SRV="$(bashio::config 'remote_port'):$(bashio::config 'local_host'):$(bashio::config 'local_port') $(bashio::config 'ssh_user')@$(bashio::config 'ssh_host')"
+SRV="-R $(bashio::config 'remote_port'):$(bashio::config 'local_host'):$(bashio::config 'local_port') $(bashio::config 'ssh_user')@$(bashio::config 'ssh_host')"
 
 if ! bashio::config.equals 'ssh_port' 22; then
     SRV="-p $(bashio::config 'ssh_port') ${SRV}"
