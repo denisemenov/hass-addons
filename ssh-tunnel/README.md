@@ -1,2 +1,2 @@
 # hass-addons
-Home Assistant Add-ons [denisemenov]
+Home Assistant Addons [denisemenov]
