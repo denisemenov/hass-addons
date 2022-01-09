@@ -1,0 +1,23 @@
+{
+  "name": "SSH Tunnel",
+  "version": "1.0.0",
+  "slug": "ssh_tunnel",
+  "description": "Create SSH tunnel to public server",
+  "url": "https://github.com/denisemenov/hassio-addons/tree/master/ssh_tunnel",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "system",
+  "boot": "auto",
+  "host_network": true,
+  "options": {
+    "ssh_host": "10.0.0.1",
+    "ssh_user": "root",
+    "ssh_port": 22,
+  },
+  "schema": {
+    "ssh_host": "str",
+    "ssh_user": "str",
+    "ssh_port": "int",       
+    "advanced": "str?",
+    "before": "str?"
+  }
+}
