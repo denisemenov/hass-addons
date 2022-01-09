@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "slug": "ssh_tunnel",
   "description": "Create SSH tunnel to public server",
-  "url": "https://github.com/denisemenov/hassio-addons/tree/master/ssh_tunnel",
+  "url": "https://github.com/denisemenov/hass-addons/tree/master/ssh_tunnel",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "system",
   "boot": "auto",
